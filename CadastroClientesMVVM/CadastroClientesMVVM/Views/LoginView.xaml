@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CadastroClientesMVVM.Views.LoginView"
+             NavigationPage.HasNavigationBar="False"
+             >
+
+    <StackLayout>
+        <Frame>
+            <Image Source="login" />
+        </Frame>
+        <Label Text="Logar" TextColor="#3d669c" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+        <Entry Placeholder="Usuario" Text="{Binding Usuario}"/>
+        <Entry Placeholder="Senha" Text="{Binding Senha}" IsPassword="True"/>
+        <Button Text="LOGIN" Command="{Binding LoginCommand}" BackgroundColor="#3d669c" TextColor="White" FontSize="Medium" WidthRequest="200" HorizontalOptions="Center"/>
+    </StackLayout>
+    
+    
+    
+    
+</ContentPage>
